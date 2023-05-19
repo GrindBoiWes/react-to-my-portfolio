@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helper';
+import '.../style.css';
 
 
 export default function Contact() {
@@ -52,14 +53,14 @@ export default function Contact() {
           type="name"
           placeholder="name"
         />
-        <input
+        <input className ='form mb-3'
           value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
           placeholder="email"
         />
-        <input
+        <input className ='form mb-3'
           value={comment}
           name="comment"
           onChange={handleInputChange}
