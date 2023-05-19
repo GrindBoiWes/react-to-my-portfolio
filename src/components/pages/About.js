@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <h1>About Me</h1>
       <p>
-        Hello! My name is Wesley Harrison and welcome to my portfolio! 
+        Hello! My name is Wesley Harrison and I am a Full Stack Developer, Photographer, Musician, and Content Creator.
       </p>
     </div>
   );
