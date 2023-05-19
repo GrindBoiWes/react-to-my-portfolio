@@ -32,18 +32,13 @@ export default function Contact() {
           return;
           // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
         }
-        if (!checkPassword(password)) {
-          setErrorMessage(
-            `Choose a more secure password for the account: ${userName}`
-          );
-          return;
-        }
-        alert(`Hello ${userName}`);
+        
+        alert(`Hello ${name}`);
     
         // If everything goes according to plan, we want to clear out the input after a successful registration.
-        setUserName('');
-        setPassword('');
+        setName('');
         setEmail('');
+        setComment('');
       };
 
 
