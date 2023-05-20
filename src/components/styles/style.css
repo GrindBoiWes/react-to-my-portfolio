@@ -17,3 +17,20 @@
     margin-bottom: 5px;
     width: 50%;
   } */
+
+  .bioPic {
+    border-radius: 50%;
+    height: 500px;
+    width:500px;
+  }
+
+  .about-me {
+    display: flex;
+  }
+
+  .port-photos {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+  }
