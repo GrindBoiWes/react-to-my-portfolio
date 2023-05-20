@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { validateEmail } from '../utils/helper';
-import '../style.css';
+import '../styles/style.css';
 
 
 export default function Contact() {
@@ -43,10 +43,10 @@ export default function Contact() {
 
 
   return (
-    <div>
+    <div className='contact'>
       <h1>Contact Me</h1>
       <form className="form mb-3">
-        <input
+        <input className='form mb-3'
           value={name}
           name="name"
           onChange={handleInputChange}

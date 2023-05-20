@@ -1,10 +1,19 @@
+.contact {
+    justify-content: center;
+}
+
 .form {
     margin: 20px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+    align-content: center;
   }
   
-  .form input {
+  /* .form input {
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 100%;
-  }
+    width: 50%;
+  } */
