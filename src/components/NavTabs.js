@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {faHouse} from '@fortawesome/free-solid-svg-icons';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
@@ -10,7 +10,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           onClick={() => handlePageChange('Home')}
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
-          Home
+         < img src={faHouse} />
         </a>
       </li>
       <li className="nav-item">
