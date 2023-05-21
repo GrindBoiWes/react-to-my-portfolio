@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/style.css';
+
+
 import port1 from '../../images/impress-your-friends.png';
 import port2 from '../../images/moving-pic.png';
 

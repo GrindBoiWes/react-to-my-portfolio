@@ -1,4 +1,7 @@
 import React from 'react';
+import './styles/style.css';
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHouse} from '@fortawesome/free-solid-svg-icons';
 import {faLaptopCode} from '@fortawesome/free-solid-svg-icons';
@@ -6,8 +9,17 @@ import {faUser} from '@fortawesome/free-solid-svg-icons';
 import {faPenToSquare} from '@fortawesome/free-solid-svg-icons';
 
 
+const styles = {
+  navbarStyle: {
+    justifyContent: 'end',
+    background: '#999999',
+  }
+}
+
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+  <div style={styles.navbarStyle} className='navbar'> 
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -46,6 +58,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+  </div>   
   );
 }
 

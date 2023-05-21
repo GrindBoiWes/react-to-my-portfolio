@@ -1,9 +1,21 @@
 import React from 'react';
+import '../styles/style.css';
 import bioPic from '../../images/Portfolio-Pic.jpg';
+
+const styles = {
+  homeStyle: {
+    background: '#999999',
+    margin: '0px',
+    height: '100vh',
+    width: 'auto',
+  },
+
+}
+
 
 export default function Home() {
   return (
-    <div>
+    <div style={styles.homeStyle} className='home-page'>
      <h1>Welcome to my Portfolio</h1>
      <div className='about-me'>
        <img src={bioPic} className='bioPic' alt='bio-pic'/>
