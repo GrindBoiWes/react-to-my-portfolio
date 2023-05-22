@@ -4,6 +4,21 @@ import { validateEmail } from '../utils/helper';
 import '../styles/style.css';
 
 
+const styles = {
+  contactStyle: {
+    border: '5px solid white',
+    alignItems: 'center',
+    position: 'relative',
+    
+  },
+  inputStyle: {
+    backgroundColor: 'white'
+  }
+}
+
+
+
+
 export default function Contact() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
@@ -45,22 +60,22 @@ export default function Contact() {
   return (
     <div className='contact'>
       <h1>Contact Me</h1>
-      <form className="form mb-3">
-        <input className='form mb-3'
+      <form style={styles.contactStyle} className="form mb-3">
+        <input style={styles.inputStyle} className='form mb-3'
           value={name}
           name="name"
           onChange={handleInputChange}
           type="name"
           placeholder="name"
         />
-        <input className ='form mb-3'
+        <input style={styles.inputStyle} className ='form mb-3'
           value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
           placeholder="email"
         />
-        <input className ='form mb-3'
+        <input style={styles.inputStyle} className ='form mb-3'
           value={comment}
           name="comment"
           onChange={handleInputChange}
