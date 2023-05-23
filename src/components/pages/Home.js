@@ -50,13 +50,6 @@ const styles = {
     fontSize: '3.5em',
     color: 'white',
   },
-
-  proPic: {
-    height: '600px',
-    width: '600px',
-    
-    
-  }
 }
 
 

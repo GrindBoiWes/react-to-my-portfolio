@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHouse} from '@fortawesome/free-solid-svg-icons';
 import {faLaptopCode} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-solid-svg-icons';
+import {faFile} from '@fortawesome/free-solid-svg-icons';
 import {faPenToSquare} from '@fortawesome/free-solid-svg-icons';
 
 
@@ -43,11 +44,20 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
+          href="#about"
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        >
+         <FontAwesomeIcon icon={faUser} style={{color: "#FFFFFF", height: '1.5em', margin: '0px 10px'}} />
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
-         <FontAwesomeIcon icon={faUser} style={{color: "#FFFFFF", height: '1.5em', margin: '0px 10px'}} />
+         <FontAwesomeIcon icon={faFile} style={{color: "#FFFFFF", height: '1.5em', margin: '0px 10px'}} />
         </a>
       </li>
       <li className="nav-item">

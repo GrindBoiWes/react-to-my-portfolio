@@ -6,13 +6,26 @@ import '../styles/style.css';
 
 const styles = {
   contactStyle: {
-    border: '5px solid white',
     alignItems: 'center',
-    position: 'relative',
+    width: '50%',
+    margin: '20px',
+    animation: 'drop-in 1200ms ease 200ms backwards'
+  },
+
+  h1Style: {
+    color:'white',
+    fontFamily: 'Helvetica',
+    animation: 'drop-in 1s ease 200ms backwards'
+  },
+
+  inputStyle: {
+    backgroundColor: 'white',
     
   },
-  inputStyle: {
-    backgroundColor: 'white'
+
+  commentStyle: {
+    backgroundColor: 'white',
+    height: '100px'
   }
 }
 
@@ -59,23 +72,23 @@ export default function Contact() {
 
   return (
     <div className='contact'>
-      <h1>Contact Me</h1>
+      <h1 style={styles.h1Style}>Contact Me</h1>
       <form style={styles.contactStyle} className="form mb-3">
         <input style={styles.inputStyle} className='form mb-3'
           value={name}
-          name="name"
+          name="Name"
           onChange={handleInputChange}
           type="name"
-          placeholder="name"
+          placeholder="Name"
         />
         <input style={styles.inputStyle} className ='form mb-3'
           value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
-          placeholder="email"
+          placeholder="Email"
         />
-        <input style={styles.inputStyle} className ='form mb-3'
+        <input style={styles.commentStyle} className ='form mb-3'
           value={comment}
           name="comment"
           onChange={handleInputChange}

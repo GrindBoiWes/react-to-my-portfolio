@@ -1,23 +1,62 @@
 import React from 'react';
 import '../styles/style.css';
 
+const styles = {
+  iconStyle: {
+    width: '35%',
+    height: 'auto',
+    margin: '10px',
+    animation: 'drop-in 1200ms ease 200ms backwards',
+    marginTop: '150px'
+  },
+
+  h1Style: {
+    fontFamily: 'Helvetica',
+    color: 'white',
+    animation: 'drop-in 1s ease 200ms backwards'
+  }
+}
+
 export default function Resume() {
   return (
     <div>
-      <h1>Resume</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <h1 style={styles.h1Style}>Resume</h1>
+      <div className ='container-lg'>
+        <div className= 'row'>
+        <div className ='col'>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style={styles.iconStyle} alt='html' />
+        </div>
+      <div className ='col'>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style={styles.iconStyle} alt='css' />
+        </div>
+      <div className= 'col'>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style={styles.iconStyle} alt='javascript' />
+        </div>
+      </div>
+      <div className= 'row'>
+        <div className= 'col'>
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style={styles.iconStyle} alt='nodeJS' />
+        </div>
+        <div className ='col'>
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" style={styles.iconStyle} alt='express' />
+         </div>
+        <div className= 'col'>
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" style={styles.iconStyle} alt ='mysql' />
+         </div>
+      </div>
+      <div className='row'>
+        <div className= 'col'>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" style={styles.iconStyle} alt='npm'/>
+         </div>
+         <div className= 'col'>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" style={styles.iconStyle} alt='heroku'/>
+      </div>
+      <div className= 'col'>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style={styles.iconStyle} alt='react' />
+      </div>
+      </div>
+      </div>
+      <h2></h2> 
     </div>
   );
 }

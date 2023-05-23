@@ -10,12 +10,13 @@ import port4 from '../../images/STM1.png';
 const styles = {
   portStyle: {
     margin: '50px',
+    animation: 'drop-in 1s ease 200ms backwards'
   },
   imgStyle: {
-    margin: '20px 0px',
-    border: '5px solid #999999',
+    margin: '20px 20px',
+    border: '3px solid #999999',
     borderRadius: '30px',
-    height: 'auto',
+    height: '100%',
     width: '100%',
     display: 'grid',
     
@@ -23,7 +24,10 @@ const styles = {
 
   h1Style: {
     color: 'white',
-    fontFamily: 'Ink Free'
+    fontFamily: 'Helvetica',
+    marginLeft: '525px',
+    display: 'flex',
+    position: 'relative'
   }
 }
 
@@ -32,20 +36,30 @@ export default function Portfolio() {
   return (
     <div style={styles.portStyle}>
       <h1 style={styles.h1Style}>Portfolio</h1>
-      <section class= 'gallery'>
-      <div class= 'container-lg'>
-      <div class="row" className='port-photos'>
-        <div class ="col">
-        <img src ={port1} class ='gallery-item' style={styles.imgStyle} alt='impress-your-friends' />
+      <section className= 'gallery'>
+      <div className= 'container-lg'>
+      <div className="row">
+        <div className ="col">
+          <a href ='https://grindboiwes.github.io/impress-your-friends/'>
+        <img src ={port1} className ='gallery-item' style={styles.imgStyle} alt='impress-your-friends' />
+        </a>
         </div>
-        <div class='col'>
-        <img src ={port2} class ='gallery-item' style={styles.imgStyle} alt='moving-pictures' />
+        <div className='col'>
+          <a href='https://limitless-scrubland-26764.herokuapp.com/'>
+        <img src ={port2} className ='gallery-item' style={styles.imgStyle} alt='moving-pictures' />
+        </a>
         </div>
-        <div class='col'>
-        <img src ={port3} class ='gallery-item' style={styles.imgStyle} alt='workday' />
         </div>
-        <div class='col'>
-        <img src ={port4} class ='gallery-item' style={styles.imgStyle} alt='smarter' />
+        <div className='row'>
+        <div className='col'>
+          <a href ='https://grindboiwes.github.io/plan-ahead/'>
+        <img src ={port3} className ='gallery-item' style={styles.imgStyle} alt='workday' />
+          </a>
+        </div>
+        <div className='col'>
+          <a href ='https://grindboiwes.github.io/smarter-than-machines/'>
+        <img src ={port4} className ='gallery-item' style={styles.imgStyle} alt='smarter' />
+        </a>
         </div>
       </div>
     </div>
