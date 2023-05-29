@@ -4,7 +4,7 @@ import '../styles/style.css';
 const styles = {
   homeStyle: {
     margin: '0px',
-    height: '100vh',
+    height: 'auto',
     width: 'auto',
   },
 

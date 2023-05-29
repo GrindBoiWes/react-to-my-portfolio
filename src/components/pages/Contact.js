@@ -5,9 +5,15 @@ import '../styles/style.css';
 
 
 const styles = {
+
+  formStyle: {
+    marginLeft: '30%'
+    
+  },
+
   contactStyle: {
     alignItems: 'center',
-    width: '50%',
+    width: '75%',
     margin: '20px',
     animation: 'drop-in 1200ms ease 200ms backwards'
   },
@@ -71,12 +77,12 @@ export default function Contact() {
 
 
   return (
-    <div className='contact'>
+    <div className='contact' style={styles.formStyle}>
       <h1 style={styles.h1Style}>Contact Me</h1>
       <form style={styles.contactStyle} className="form mb-3">
         <input style={styles.inputStyle} className='form mb-3'
           value={name}
-          name="Name"
+          name="name"
           onChange={handleInputChange}
           type="name"
           placeholder="Name"

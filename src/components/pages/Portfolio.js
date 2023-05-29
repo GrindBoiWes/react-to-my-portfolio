@@ -25,7 +25,7 @@ const styles = {
   h1Style: {
     color: 'white',
     fontFamily: 'Helvetica',
-    marginLeft: '525px',
+    marginLeft: '25%',
     display: 'flex',
     position: 'relative'
   }

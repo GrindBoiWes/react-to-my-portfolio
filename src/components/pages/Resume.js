@@ -5,7 +5,7 @@ const styles = {
   iconStyle: {
     width: '35%',
     height: 'auto',
-    margin: '10px',
+    margin: '20px',
     animation: 'drop-in 1200ms ease 200ms backwards',
     marginTop: '150px'
   },
@@ -13,7 +13,27 @@ const styles = {
   h1Style: {
     fontFamily: 'Helvetica',
     color: 'white',
-    animation: 'drop-in 1s ease 200ms backwards'
+    animation: 'drop-in 1s ease 200ms backwards',
+    marginLeft: '25%'
+  },
+
+  h2Style: {
+    fontFamily: 'Helvetica',
+    color: 'white',
+    animation: 'drop-in 1500ms ease 200ms backwards',
+  },
+
+  linkStyle: {
+    textDecoration: 'none',
+    fontFamily: 'Verdana',
+    animation: 'drop-in 1500ms ease 200ms backwards',
+    color: 'white'
+  },
+
+  resumeStyle: {
+    display: 'flex',
+    fontSize: '1.5em',
+    marginLeft: '41%'
   }
 }
 
@@ -56,7 +76,9 @@ export default function Resume() {
       </div>
       </div>
       </div>
-      <h2></h2> 
+      <div style={styles.resumeStyle}>
+      <a href= 'https://docs.google.com/document/d/1KpbNyOfZeASO_-Nid_pJN3wSSst-wcRHhRHrp86X4eQ/edit?usp=sharing' className='resume' style={styles.linkStyle} target='_blank' rel='nonreferrer'>Download Resume!</a>
+      </div>
     </div>
   );
 }
