@@ -3,18 +3,18 @@ import '../styles/style.css';
 
 const styles = {
   iconStyle: {
-    width: '35%',
+    width: '30%',
     height: 'auto',
     margin: '20px',
     animation: 'drop-in 1200ms ease 200ms backwards',
-    marginTop: '150px'
+    marginTop: '125px'
   },
 
   h1Style: {
     fontFamily: 'Helvetica',
     color: 'white',
     animation: 'drop-in 1s ease 200ms backwards',
-    marginLeft: '25%'
+    
   },
 
   h2Style: {
@@ -40,9 +40,13 @@ const styles = {
 export default function Resume() {
   return (
     <div>
-      <h1 style={styles.h1Style}>Resume</h1>
       <div className ='container-lg'>
         <div className= 'row'>
+          <div className='col'>
+      <h1 style={styles.h1Style}>Resume</h1>
+      </div>
+      </div>
+      <div className='row'>
         <div className ='col'>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style={styles.iconStyle} alt='html' />
         </div>

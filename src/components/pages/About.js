@@ -8,7 +8,7 @@ const styles = {
         fontFamily: 'Helvetica',
         animation: 'drop-in 1s ease 200ms backwards',
         color: 'white',
-        marginLeft: '25%'
+        
     },
     imageStyle: {
         animation: 'drop-in 1200ms ease 200ms backwards',
@@ -29,10 +29,12 @@ const styles = {
 export default function About() {
     return (
     
-    <div>
-        <h1 style={styles.h1Style}>About Me</h1>
         <div className='container-lg'>
             <div className='row'>
+                <div className='col'>
+                <h1 style={styles.h1Style}>About Me</h1>
+                </div>
+                <div className='row'>
                 <div className='col'>
                    <img src={bioPic} style={styles.imageStyle} alt='wes' />
                  </div> 

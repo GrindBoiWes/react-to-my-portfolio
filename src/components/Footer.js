@@ -1,28 +1,46 @@
 import React from 'react';
 import './styles/style.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-function footer() {
+import icon1 from '../images/github-logo.png';
+import icon2 from '../images/li-white-logo.png';
+
+const styles = {
+    footerStyle: {
+     position: 'absolute',
+     bottom: '0',
+     display: 'flex',
+     marginLeft: '40%'
+    
+    },
+
+    iconStyle: {
+        height: 'auto',
+        width: '25%',
+        margin: '20px 0px',
+        
+    }
+}
+
+function Footer() {
     return (
-        <div>
+        <div style={styles.footerStyle}>
          <div className="row">
-          <div className="col-md-4">
+          <div className="col">
+            <a href ='https://github.com/GrindBoiWes'>
+              <img src = {icon1} style ={styles.iconStyle} className='footicon' alt='github' />
+            </a>
           </div>
-          <div className="col-md-4">
-            <ul className="list-unstyled"  >
-              <a href="https://github.com/GrindBoiWes" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
+
+          <div className='col'>
+            <a href = 'https://www.linkedin.com/in/wes-harrison-69766583/'>
+              <img src = {icon2} style={styles.iconStyle} className='footicon' alt= 'linked-in' />
               </a>
-              <a href="https://www.linkedin.com/in/wes-harrison-69766583/" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-            </ul>
+            </div>
           </div>
         </div>
-      </div>
+      
        
     )
 }
 
-export default footer;
+export default Footer;
