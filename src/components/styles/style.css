@@ -112,17 +112,48 @@ body {
   transform: scaleX(1)
 }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
+.img-container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
   width: 100%;
-  height: 0;
-  transition: 1s ease;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.img-container:hover .image {
+  opacity: 0.3;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4f5251;
+  color: white;
+  font-size: 16px;
+  font-family: helvetica;
+  padding: 16px 32px;
 }
 
 .img-container:hover .overlay {
-  height: 100%;
+  opacity: 1;
 }

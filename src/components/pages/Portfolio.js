@@ -49,30 +49,36 @@ export default function Portfolio() {
       <div className='row' style={styles.imgSpace}>
         <div className ="col img-container">
           <a href ='https://grindboiwes.github.io/impress-your-friends/'>
-        <img src ={port1} className ='gallery-item' style={styles.imgStyle} alt='impress-your-friends' />
-         <div className='overlay'>
-          <div className='proinfo'>Impress Your Friends</div>
+        <img src ={port1} className ='gallery-item image' style={styles.imgStyle} alt='impress-your-friends' />
+         <div className='middle'>
+          <div className='text'>Impress Your Friends</div>
         </div>
         </a>
         </div>
-        <div className='col'>
+        <div className='col img-container'>
           <a href='https://limitless-scrubland-26764.herokuapp.com/'>
-        <img src ={port2} className ='gallery-item' style={styles.imgStyle} alt='moving-pictures' />
-        <p>Moving Pictures</p>
+        <img src ={port2} className ='gallery-item image' style={styles.imgStyle} alt='moving-pictures' />
+        <div className='middle'>
+        <div className='text'>Impress Your Friends</div>
+        </div>
         </a>
         </div>
         </div>
         <div className='row' style={styles.imgSpace}>
-        <div className='col'>
+        <div className='col img-container'>
           <a href ='https://grindboiwes.github.io/plan-ahead/'>
-        <img src ={port3} className ='gallery-item' style={styles.imgStyle} alt='workday' />
-        <p>Plan Ahead</p>
+        <img src ={port3} className ='gallery-item image' style={styles.imgStyle} alt='workday' />
+        <div className='middle'>
+        <div className='text'>Plan Ahead</div>
+        </div>
           </a>
         </div>
-        <div className='col'>
+        <div className='col img-container'>
           <a href ='https://grindboiwes.github.io/smarter-than-machines/'>
-        <img src ={port4} className ='gallery-item' style={styles.imgStyle} alt='smarter' />
-        <p>Smarter Than Machine</p>
+        <img src ={port4} className ='gallery-item image' style={styles.imgStyle} alt='smarter' />
+        <div className='middle'>
+        <div className='text'>Smarter Than Machines</div>
+        </div>
         </a>
         </div>
       </div>

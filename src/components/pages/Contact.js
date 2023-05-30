@@ -32,6 +32,15 @@ const styles = {
   commentStyle: {
     backgroundColor: 'white',
     height: '100px'
+  },
+
+  buttonStyle: {
+    backgroundColor: '#e7e7e7',
+    borderRadius: '2px',
+    marginLeft: '20px',
+    fontFamily: 'Helvetica',
+    fontSize: '1.2em'
+
   }
 }
 
@@ -101,7 +110,7 @@ export default function Contact() {
           type="text"
           placeholder="Comment"
         />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <button type="button" style={styles.buttonStyle} onClick={handleFormSubmit}>Submit</button>
       </form>
     </div>
   );
