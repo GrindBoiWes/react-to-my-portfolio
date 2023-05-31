@@ -2,7 +2,7 @@
   "name": "react-to-my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/GrindBoiWes/react-to-my-portfolio",
+  "homepage": "https://grindboiwes.github.io/react-to-my-portfolio/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
