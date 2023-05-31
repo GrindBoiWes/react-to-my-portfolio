@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/GrindBoiWes/react-to-my-portfolio/static/css/main.78d9140d.css",
+    "main.js": "/GrindBoiWes/react-to-my-portfolio/static/js/main.fbe9ac55.js",
+    "static/media/moving-pic.png": "/GrindBoiWes/react-to-my-portfolio/static/media/moving-pic.f2d408db48570491a898.png",
+    "static/media/impress-your-friends.png": "/GrindBoiWes/react-to-my-portfolio/static/media/impress-your-friends.eb5e5abdc108df6e7d04.png",
+    "static/media/texture-background.jpg": "/GrindBoiWes/react-to-my-portfolio/static/media/texture-background.f47a5873ff093c4cebdf.jpg",
+    "static/media/Portfolio-Pic.jpg": "/GrindBoiWes/react-to-my-portfolio/static/media/Portfolio-Pic.9125f12a6e9436555bb7.jpg",
+    "static/media/workday.png": "/GrindBoiWes/react-to-my-portfolio/static/media/workday.3cd35decb134a2b77268.png",
+    "static/media/STM1.png": "/GrindBoiWes/react-to-my-portfolio/static/media/STM1.5c3496ef29f4a0b9aac3.png",
+    "index.html": "/GrindBoiWes/react-to-my-portfolio/index.html",
+    "main.78d9140d.css.map": "/GrindBoiWes/react-to-my-portfolio/static/css/main.78d9140d.css.map",
+    "main.fbe9ac55.js.map": "/GrindBoiWes/react-to-my-portfolio/static/js/main.fbe9ac55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78d9140d.css",
+    "static/js/main.fbe9ac55.js"
+  ]
+}
