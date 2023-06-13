@@ -4,7 +4,7 @@ import '../styles/style.css';
 
 import port1 from '../../images/impress-your-friends.png';
 import port2 from '../../images/moving-pic.png';
-import port3 from '../../images/workday.png';
+import port3 from '../../images/Arcanum.png';
 import port4 from '../../images/STM1.png';
 
 const styles = {
@@ -66,10 +66,10 @@ export default function Portfolio() {
         </div>
         <div className='row' style={styles.imgSpace}>
         <div className='col img-container'>
-          <a href ='https://grindboiwes.github.io/plan-ahead/'>
+          <a href ='https://arcanum.herokuapp.com/'>
         <img src ={port3} className ='gallery-item image' style={styles.imgStyle} alt='workday' />
         <div className='middle'>
-        <div className='text'>Plan Ahead</div>
+        <div className='text'>Arcanum</div>
         </div>
           </a>
         </div>
